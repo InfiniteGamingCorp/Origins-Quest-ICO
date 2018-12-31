@@ -1,0 +1,23 @@
+﻿@model OriginsQuestICO.ViewModels.SubscribeViewModel
+
+<div class="container">
+    <div class="row subscribe-wrapper">
+        <div class="col-12 col-md-12 col-lg-10 mx-auto">
+            <div id="subscribe" class="subscribe">
+                <div class="subscribe-form">
+                    <div class="sub-title">
+                        <h2 class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">Subscribe For Token Sale Update</h2>
+                        <p class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">Artificial based on the neural network, the NRM assistant will instantly analyze user data use.</p>
+                    </div>
+                    @using (Html.BeginForm("Subscribe", "Site", FormMethod.Post, new { @id="frmSubscribe" }))
+                    {
+                    <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
+                        @Html.EditorFor(x => x.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter your Email Address", Name="SubscribeEmail" } })
+                        <button type="submit" class="text-center">Subscribe</button>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OriginsQuestICO", "OriginsQuestICO\OriginsQuestICO.csproj", "{E80B829A-D3EE-498E-BEFB-BD683CA23589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OriginsQuestICO.Tests", "OriginsQuestICO.Tests\OriginsQuestICO.Tests.csproj", "{7D52FF1F-C740-4908-83BF-9E427604FFB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E80B829A-D3EE-498E-BEFB-BD683CA23589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E80B829A-D3EE-498E-BEFB-BD683CA23589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E80B829A-D3EE-498E-BEFB-BD683CA23589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E80B829A-D3EE-498E-BEFB-BD683CA23589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D52FF1F-C740-4908-83BF-9E427604FFB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D52FF1F-C740-4908-83BF-9E427604FFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D52FF1F-C740-4908-83BF-9E427604FFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D52FF1F-C740-4908-83BF-9E427604FFB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {933B3EE3-3BE7-495E-895B-D349197CE38E}
+	EndGlobalSection
+EndGlobal

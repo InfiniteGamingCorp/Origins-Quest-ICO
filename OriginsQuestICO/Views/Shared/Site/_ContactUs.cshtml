@@ -1,0 +1,55 @@
+﻿@model OriginsQuestICO.ViewModels.ContactFormViewModel
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="address_wrapper">
+                <div class="sub-title">
+                    <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">Get in touch with us</h2>
+                </div>
+                <div class="contact-info-wrapper">
+                    <div class="contact-info">
+                        <div class="single-list wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                            @*<div class="address_title"><img src="/Content/images/icons/contact_1.png" alt=""><span>Address</span></div>*@
+                            <div class="title_caption">
+                                <span>26 Geranium Street <br>Vereeniging, South Africa, 1939</span>
+                            </div>
+                        </div>
+                        <div class="single-list wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
+                            @*<div class="address_title"><img src="/Content/images/icons/contact_2.png" alt=""><span>Call Us</span></div>*@
+                            <div class="title_caption">
+                                <span>+27 (0) 67 205 1634<br>E-mail: info@originsquest.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="contact_form">
+                @using (Html.BeginForm("ContactForm", "Site", FormMethod.Post, new { @id = "frmContactForm" }))
+                {
+                    <div class="row">
+                        <div class="col-12 col-sm-12  form-group  wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                            @Html.EditorFor(x=> x.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Your Name" } })
+                            @*<input type="text" class="form-control" id="name" placeholder="Your Name">*@
+                        </div>
+                        <div class="col-12 col-sm-12  form-group  wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
+                            @Html.EditorFor(x => x.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "E-mail Address" } })
+                            @*<input type="email" class="form-control person-email" id="email" placeholder="E-mail Address">*@
+                        </div>
+                        <div class="col-12 col-sm-12 form-group  wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
+                            @Html.TextAreaFor(x => x.Comment, new { htmlAttributes = new { @class = "form-control", @placeholder = "Message" } })
+                            @*<textarea class="form-control" id="comment" placeholder="Massage"></textarea>*@
+                        </div>
+                        <div class="col-12 col-sm-12 form-group">
+                            <div class="submit-btn  wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+                                <input type="submit" value="Send Massage">
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

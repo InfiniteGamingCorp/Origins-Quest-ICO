@@ -4,9 +4,7 @@
 
         e.preventDefault() // prevent the form's normal submission
 
-        var dataToPost = $(this).serialize()
-
-        console.log(dataToPost);
+        var dataToPost = $(this).serialize();        
 
         $.post("Site/ContactFormAsync", dataToPost, function (data, status) {
             if (data.success) {
@@ -31,18 +29,53 @@
 
         e.preventDefault() // prevent the form's normal submission
 
-        var dataToPost = $(this).serialize()
+        //var dataToPost = $(this).serialize();
 
-        $.post("Site/SubscribeAsync", dataToPost, function (data, status) {
-            if (data.success) {
-                ClearSubscribeForm();
-                Swal(
-                    'Newsletter',
-                    'You have been added to our newsletter list.',
-                    'success'
-                )
+        var dataToPost = "{'SubscriberEmail':'" + $('#SubscriberEmail').val() + "'}";
+
+        $.ajax({
+            url: "Site/SubscribeAsync",
+            type: "POST",
+            dataType: 'json',
+            data: dataToPost,
+            cache: false,
+            contentType: "application/jsonrequest; charset=utf-8",
+            success: function (data) {
+                if (data.success) {
+                    ClearSubscribeForm();
+                    Swal(
+                        'Newsletter',
+                        'You have been added to our newsletter list.',
+                        'success'
+                    )
+                }
+                else {
+                    Swal(
+                        'Newsletter',
+                        'There as a problem subscribing to the newsletter.',
+                        'error'
+                    )
+                }
             }
         });
+
+        //$.post("Site/SubscribeAsync", dataToPost, function (data, status) {
+        //    if (data.success) {
+        //        ClearSubscribeForm();
+        //        Swal(
+        //            'Newsletter',
+        //            'You have been added to our newsletter list.',
+        //            'success'
+        //        )
+        //    }
+        //    else {
+        //        Swal(
+        //            'Newsletter',
+        //            'There as a problem subscribing to the newsletter.',
+        //            'error'
+        //        )
+        //    }
+        //});
     })
 
 });

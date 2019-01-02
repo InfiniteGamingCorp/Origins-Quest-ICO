@@ -5,6 +5,6 @@ namespace OriginsQuestICO.ViewModels
     public class SubscribeViewModel
     {
         [Required]
-        public string Email { get; set; }
+        public string SubscriberEmail { get; set; }
     }
 }

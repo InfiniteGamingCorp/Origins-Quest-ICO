@@ -11,10 +11,10 @@
                     </div>
                     @using (Html.BeginForm("Subscribe", "Site", FormMethod.Post, new { @id="frmSubscribe" }))
                     {
-                    <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
-                        @Html.EditorFor(x => x.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter your Email Address", Name="SubscribeEmail" } })
-                        <button type="submit" class="text-center">Subscribe</button>
-                    </div>
+                        <div class="form-group wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
+                            @Html.EditorFor(x => x.SubscriberEmail, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter your Email Address", Name="SubscribeEmail" } })
+                            <button type="submit" class="text-center">Subscribe</button>
+                        </div>
                     }
                 </div>
             </div>

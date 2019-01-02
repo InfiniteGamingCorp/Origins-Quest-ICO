@@ -26,9 +26,23 @@ namespace OriginsQuestICO.Controllers
             return Json(new { success = result, mailId = 0});
         }
 
-        public async Task<ActionResult> SubscribeAsync(SubscribeViewModel vm)
+        [HttpPost]
+        public async Task<ActionResult> SubscribeAsync(string SubscriberEmail)
         {
-            return Json(new { success = true });
+            var success = false;
+
+            try
+            {
+                var manager = new NewsletterManager("");
+                var newSubscriber = await manager.SubscribeEmailToNewsletter(SubscriberEmail);
+                if (newSubscriber != null) success = true;
+            }
+            catch (Exception e)
+            {
+                success = false;
+            }
+            
+            return Json(new { success = success });
         }
     }
 }

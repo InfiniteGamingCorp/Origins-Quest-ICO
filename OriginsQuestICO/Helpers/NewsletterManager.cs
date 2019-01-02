@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
+using System.Web.Configuration;
 
 namespace OriginsQuestICO.Helpers
 {
@@ -15,14 +16,15 @@ namespace OriginsQuestICO.Helpers
 
         public NewsletterManager(string _apiKey)
         {
-            APIKey = "8502768580ac82248e796ee7c0643da5-us7";
+            //APIKey = "8502768580ac82248e796ee7c0643da5-us7";
         }
 
         public async Task<Member> SubscribeEmailToNewsletter(string _email)
         {
             try
             {
-                IMailChimpManager manager = new MailChimpManager(APIKey);
+                string key = WebConfigurationManager.AppSettings["MailChimpApiKey"];
+                IMailChimpManager manager = new MailChimpManager(key);
                 var mailChimpListCollection = await manager.Lists.GetAllAsync().ConfigureAwait(false);
 
                 var listId = "94815bc58b";

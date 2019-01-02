@@ -212,7 +212,6 @@ G:\Projects\OriginsQuest\Origins-Quest-ICO\OriginsQuestICO\bin\Microsoft.Owin.Se
 G:\Projects\OriginsQuest\Origins-Quest-ICO\OriginsQuestICO\bin\System.Diagnostics.DiagnosticSource.xml
 G:\Projects\OriginsQuest\Origins-Quest-ICO\OriginsQuestICO\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 G:\Projects\OriginsQuest\Origins-Quest-ICO\OriginsQuestICO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-G:\Projects\OriginsQuest\Origins-Quest-ICO\OriginsQuestICO\obj\Debug\OriginsQuestICO.csprojAssemblyReference.cache
 G:\Projects\OriginsQuest\Origins-Quest-ICO\OriginsQuestICO\obj\Debug\OriginsQuestICO.csproj.CoreCompileInputs.cache
 G:\Projects\OriginsQuest\Origins-Quest-ICO\OriginsQuestICO\obj\Debug\OriginsQuestICO.csproj.CopyComplete
 G:\Projects\OriginsQuest\Origins-Quest-ICO\OriginsQuestICO\obj\Debug\OriginsQuestICO.dll

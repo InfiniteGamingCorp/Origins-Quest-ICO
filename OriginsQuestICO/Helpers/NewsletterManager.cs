@@ -14,10 +14,7 @@ namespace OriginsQuestICO.Helpers
     {
         public string APIKey { get; set; }
 
-        public NewsletterManager(string _apiKey)
-        {
-            //APIKey = "8502768580ac82248e796ee7c0643da5-us7";
-        }
+        public NewsletterManager() {}
 
         public async Task<Member> SubscribeEmailToNewsletter(string _email)
         {

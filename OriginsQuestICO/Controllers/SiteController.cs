@@ -33,7 +33,7 @@ namespace OriginsQuestICO.Controllers
 
             try
             {
-                var manager = new NewsletterManager("");
+                var manager = new NewsletterManager();
                 var newSubscriber = await manager.SubscribeEmailToNewsletter(SubscriberEmail);
                 if (newSubscriber != null) success = true;
             }

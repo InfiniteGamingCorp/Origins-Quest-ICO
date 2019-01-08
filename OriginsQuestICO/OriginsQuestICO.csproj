@@ -382,6 +382,7 @@
     <Content Include="Content\images\team\team-08.jpg" />
     <Content Include="Content\images\wel-bg.png" />
     <Content Include="Content\images\welcome-6.png" />
+    <Content Include="Content\OriginsCustom.css" />
     <Content Include="favicon.ico" />
     <Content Include="Content\fonts\fa-brands-400.svg" />
     <Content Include="Content\fonts\fa-regular-400.svg" />
@@ -502,6 +503,7 @@
     <Content Include="Views\Shared\_LayoutSPA.cshtml" />
     <Content Include="Views\Shared\Site\_ContactUs.cshtml" />
     <Content Include="Views\Shared\Site\_Subscribe.cshtml" />
+    <Content Include="Views\Shared\_LayoutNormal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

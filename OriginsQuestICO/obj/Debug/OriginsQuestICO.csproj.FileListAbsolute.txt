@@ -216,3 +216,4 @@ G:\Projects\OriginsQuest\Origins-Quest-ICO\OriginsQuestICO\obj\Debug\OriginsQues
 G:\Projects\OriginsQuest\Origins-Quest-ICO\OriginsQuestICO\obj\Debug\OriginsQuestICO.csproj.CopyComplete
 G:\Projects\OriginsQuest\Origins-Quest-ICO\OriginsQuestICO\obj\Debug\OriginsQuestICO.dll
 G:\Projects\OriginsQuest\Origins-Quest-ICO\OriginsQuestICO\obj\Debug\OriginsQuestICO.pdb
+G:\Projects\OriginsQuest\Origins-Quest-ICO\OriginsQuestICO\obj\Debug\OriginsQuestICO.csprojAssemblyReference.cache

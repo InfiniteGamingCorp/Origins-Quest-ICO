@@ -27,7 +27,7 @@ namespace OriginsQuestICO.Helpers
                 {
                     var credential = new NetworkCredential
                     {
-                        UserName = "marius@originsquest.com",  // replace with valid value
+                        UserName = "no-reply@originsquest.com",  // replace with valid value
                         Password = "e-D6$S&!S%&%ws_W"  // replace with valid value
                     };
                     smtp.Credentials = credential;
